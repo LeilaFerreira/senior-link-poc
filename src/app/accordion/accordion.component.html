@@ -1,0 +1,57 @@
+<div class="accordion">
+  <!-- Exames -->
+  <div class="accordion-item">
+    <div class="accordion-header" (click)="toggleAccordion(0)">
+      <h3>Exames</h3>
+    </div>
+    <div class="accordion-content" [class.active]="isActive(0)">
+      <p>Detalhes sobre os exames realizados:</p>
+      <ul>
+        <li>Exame 1 - Resultado: Normal</li>
+        <li>Exame 2 - Resultado: Anormal</li>
+        <li>Exame 3 - Resultado: Normal</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Consultas Antigas -->
+  <div class="accordion-item">
+    <div class="accordion-header" (click)="toggleAccordion(1)">
+      <h3>Consultas Antigas</h3>
+    </div>
+    <div class="accordion-content" [class.active]="isActive(1)">
+      <p>Consultas realizadas anteriormente:</p>
+      <ul>
+        <li>Consulta 1 - Data: 01/01/2023</li>
+        <li>Consulta 2 - Data: 15/03/2023</li>
+        <li>Consulta 3 - Data: 20/06/2023</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Local de Atendimento -->
+  <div class="accordion-item">
+    <div class="accordion-header" (click)="toggleAccordion(2)">
+      <h3>Local de Atendimento</h3>
+    </div>
+    <div class="accordion-content" [class.active]="isActive(2)">
+      <p>Atendimento realizado em: <strong>Clínica Exemplo</strong></p>
+      <p>Endereço: Rua Exemplo, 123, Bairro, Cidade</p>
+    </div>
+  </div>
+
+  <!-- Download de Arquivos -->
+  <div class="accordion-item">
+    <div class="accordion-header" (click)="toggleAccordion(3)">
+      <h3>Download de Arquivos</h3>
+    </div>
+    <div class="accordion-content" [class.active]="isActive(3)">
+      <p>Baixe os seguintes arquivos:</p>
+      <ul>
+        <li><a href="/assets/exame1.pdf" download>Exame 1 - PDF</a></li>
+        <li><a href="/assets/exame2.pdf" download>Exame 2 - PDF</a></li>
+        <li><a href="/assets/consulta1.pdf" download>Consulta 1 - PDF</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

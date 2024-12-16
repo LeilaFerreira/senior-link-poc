@@ -1,15 +1,17 @@
 /* cadastro.component.scss */
 .cadastro-container {
   position: absolute;
-  top: 53%;
+  top: 68%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 82%;
   padding: 20px;
   border-radius: 35px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.6);
+
+
 }
 
 h2 {
@@ -58,4 +60,8 @@ button:disabled {
 .celular-cadastro{
   margin-right: 3%;
   margin-left: 3%;
+}
+.titulo-cadastro{
+  color:#ec5215 ;
+  margin-right: 30px;
 }

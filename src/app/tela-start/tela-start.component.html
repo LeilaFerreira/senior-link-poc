@@ -8,15 +8,15 @@
   <!-- Outras caixas distribuídas abaixo -->
 
   <div class="circle-container">
-    <div class="circle">Monitoramento</div>
-    <div class="circle">Alertas</div>
-    <div class="circle">Historico de Saúde</div>
+    <div class="circle"[routerLink]="['/monitoramento']">Monitoramento</div>
+    <div class="circle"[routerLink]="['/alertas']">Alertas</div>
+    <div class="circle"[routerLink]="['/historico-de-saude']">Historico de Saúde</div>
   </div>
 
+  <button class="botao-voltar-rota" (click)="goBackToHome()">Voltar </button>
 
   <!-- Botão Home -->
-   <footer><div class="botao"></div>
-    <button class="botao" (click)="goBackToHome()">Voltar </button></footer>
+   <footer><div class="botao"></div></footer>
 
 </div>
 

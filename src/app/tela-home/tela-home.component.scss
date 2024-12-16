@@ -36,10 +36,10 @@
 
 .tela {
   width: 100%;
-  height: 188px;
+  height: 300px;
   background-image: url('../../assets/images/principal6.jpg');
   background-size: cover;         /* A imagem cobre toda a área da div */
-  background-position: center;    /* A imagem é centralizada */
+  background-position: right;    /* A imagem é centralizada */
   background-repeat: no-repeat;   /* Impede a repetição da imagem */
   border-radius: 20px;            /* Bordas arredondadas */
   margin-bottom: 20px;            /* Espaço entre as caixas */
@@ -60,7 +60,7 @@
 
 }
 .button-rota{
-  background-color: #ec5215; /* Cor salmão */
+  background-color: #FFA07A; /* Cor salmão */
   color: white;              /* Cor do texto (branco) */
   border: none;              /* Remove borda padrão */
   border-radius: 25px;       /* Bordas arredondadas */
@@ -68,14 +68,12 @@
   font-size: 16px;           /* Tamanho da fonte */
   font-weight: bold;         /* Texto em negrito */
   cursor: pointer;
-  // align-self: flex-end;      /* Mudança do cursor ao passar sobre o botão */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave ao passar o mouse */
-  margin-top: 140px;
-  margin-left: 20px;
+  align-self: flex-end;      /* Mudança do cursor ao passar sobre o botão */
+  transition: background-color 0.3s; /* Transição suave ao passar o mouse */
 }
 
 /* Efeito ao passar o mouse sobre o botão */
-.botao-rota:hover {
+.botao-voltar-rota:hover {
   background-color: #ff5733; /* Cor mais escura para o efeito hover */
 }
 /* Estilo do contêiner do celular */
@@ -99,3 +97,20 @@
 }
 
 
+.botao-iniciar{
+  margin-left: 3%;
+  margin-top: 68%;
+  background-color: #ff5733;
+  color: white;              /* Cor do texto (branco) */
+  border: none;              /* Remove borda padrão */
+  border-radius: 25px;       /* Bordas arredondadas */
+  padding: 10px 20px;        /* Espaçamento interno */
+  font-size: 16px;           /* Tamanho da fonte */
+  font-weight: bold;         /* Texto em negrito */
+  cursor: pointer;
+  align-self: flex-end;      /* Mudança do cursor ao passar sobre o botão */
+
+}
+.botao-iniciar:hover {
+  background-color: #ff5733; /* Cor mais escura para o efeito hover */
+}

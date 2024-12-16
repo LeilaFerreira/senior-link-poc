@@ -9,6 +9,10 @@ import { TelaHomeComponent } from './tela-home/tela-home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { HistoricoDeSaudeComponent } from './historico-de-saude/historico-de-saude.component';
+import { MonitoramentoComponent } from './monitoramento/monitoramento.component';
+import { AlertasComponent } from './alertas/alertas.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 
 @NgModule({
@@ -19,6 +23,10 @@ import { FormularioComponent } from './formulario/formulario.component';
     TelaHomeComponent,
     CadastroComponent,
     FormularioComponent,
+    HistoricoDeSaudeComponent,
+    MonitoramentoComponent,
+    AlertasComponent,
+    AccordionComponent,
 
   ],
   imports: [
