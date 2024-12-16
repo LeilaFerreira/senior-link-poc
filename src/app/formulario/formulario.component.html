@@ -1,0 +1,18 @@
+<!-- formulario.component.html -->
+<div class="celular " [ngStyle]="{'background-image': 'url(' + imagens[0] + ')'}">
+<app-imagens></app-imagens>
+<div class="formulario-container">
+  <h2>Formulário Adicional</h2>
+
+  <form (ngSubmit)="onSubmit()" [formGroup]="formularioForm">
+    <div class="form-group">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" formControlName="nome" placeholder="Digite seu nome" required>
+      <div *ngIf="nome?.invalid && nome?.touched" class="error">Nome é obrigatório</div>
+    </div>
+
+    <button type="submit" [disabled]="formularioForm.invalid">Enviar</button>
+  </form>
+</div>
+<div class="botao"></div>
+</div>

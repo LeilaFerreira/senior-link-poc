@@ -7,6 +7,8 @@ import { ImagensComponent } from './imagens/imagens.component';
 import { TelaStartComponent } from './tela-start/tela-start.component';
 import { TelaHomeComponent } from './tela-home/tela-home.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ImagensComponent,
     TelaStartComponent,
     TelaHomeComponent,
+    CadastroComponent,
+    FormularioComponent,
 
   ],
   imports: [

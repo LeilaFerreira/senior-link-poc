@@ -113,15 +113,15 @@
 
 /* Estilo para os círculos */
 .circle {
-  width: 50px;             /* Tamanho do círculo */
-  height: 50px;            /* Tamanho do círculo */
-  background-color: #FFA07A;  /* Cor salmão */
-  border-radius: 50%;      /* Faz o formato ser circular */
-  cursor: pointer;        /* Indica que é clicável */
-  display: flex;
-  align-items: center;     /* Centraliza o conteúdo verticalmente */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  transition: background-color 0.3s ease;  /* Efeito de transição para hover */
+ width: 85px;
+    height: 85px;
+    background-color: #FFA07A;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
 }
 
 .circle:hover {

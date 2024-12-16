@@ -1,0 +1,70 @@
+.celular {
+  width: 300px; /* Largura do celular */
+  height: 600px; /* Altura do celular */
+  background-color: #FFA07A; /* Cor de fundo caso a imagem não carregue */
+  background-size: cover;  /* Ajusta a imagem para cobrir toda a área do contêiner */
+  background-position: center;  /* Centraliza a imagem */
+  background-repeat: no-repeat;  /* Não repete a imagem */
+  border-radius: 40px;
+  position: relative;  /* Necessário para posicionar o formulário dentro do celular */
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.formulario-container {
+  position: absolute; /* Posiciona o formulário sobre a imagem */
+  top: 50%; /* Centraliza o formulário verticalmente */
+  left: 50%; /* Centraliza o formulário horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta o formulário para que fique no centro exato */
+  width:82%; /* Largura do formulário */
+  background-color: rgba(255, 255, 255, 0.7); /* Fundo branco semitransparente para o formulário */
+  padding: 20px;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para o formulário */
+  z-index: 1; /* Garante que o formulário fique acima da imagem */
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 92%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+.botao {
+  width: 60px;
+  height: 10px;
+  background-color: #c7c4c2;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -9,6 +9,10 @@ import { Router } from '@angular/router';
 export class TelaHomeComponent {
   constructor(private router: Router) { }
 
+
+  navigateToFormulario():void {
+    this.router.navigate(['/formulario']);
+  }
   // Método para navegar para outra página
   navigateToTelaStart(): void {
     this.router.navigate(['/tela-start']);
