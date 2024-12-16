@@ -1,0 +1,51 @@
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px;
+}
+
+.accordion-item {
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+ border-radius: 100p
+}
+
+.accordion-header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.accordion-header:hover {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.accordion-content.active {
+  display: block;
+  max-height: 500px;  /* Um valor arbitrário grande para que a altura se ajuste */
+  padding: 15px;
+}
+
+/* Estilos para os links de download */
+.accordion-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.accordion-content a:hover {
+  text-decoration: underline;
+}

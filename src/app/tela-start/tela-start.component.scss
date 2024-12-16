@@ -12,7 +12,7 @@
 .celular {
   width: 300px;
   height: 600px;
-  background-color: #000;
+  background-color: #f8dfdf;
   border-radius: 40px;
   position: relative;
   overflow: hidden;
@@ -29,16 +29,7 @@
 // }
 
 /* Estilos do botão do celular */
-.botao {
-  width: 60px;
-  height: 10px;
-  background-color: #333;
-  border-radius: 20px;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 
 // .tela {
 //   width: 100%;
@@ -51,15 +42,15 @@
 
 // }
 .tela {
+  padding: 11% 0 0px 0;
   width: 100%;
-  height: 300px;
-  // background-image: url('../../assets/images/principal3.jpg');
+  height: 200px;
+  background-image: url('../../assets/images/principal8.jpg');
   background-size: cover;         /* A imagem cobre toda a área da div */
   background-position: center;    /* A imagem é centralizada */
   background-repeat: no-repeat;   /* Impede a repetição da imagem */
   border-radius: 20px;            /* Bordas arredondadas */
   margin-bottom: 20px;            /* Espaço entre as caixas */
-
   /* Para adicionar transparência ao fundo */
   position: relative;
 }
@@ -80,7 +71,7 @@
 .caixa {
   width: 100%;
   height: 100px;
-  background-color: rgba(133, 95, 95, 0.1); /* Cor de fundo semitransparente */
+  background-color: rgba(161, 51, 51, 0.1); /* Cor de fundo semitransparente */
   margin-bottom: 10px;
   border-radius: 20px;
   display: flex;
@@ -113,17 +104,47 @@
 
 /* Estilo para os círculos */
 .circle {
- width: 85px;
-    height: 85px;
-    background-color: #FFA07A;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
+  width: 85px;                /* Largura do círculo */
+  height: 85px;               /* Altura do círculo */
+  background-color: #FFA07A;  /* Cor de fundo */
+  border-radius: 50%;         /* Faz com que o elemento fique redondo */
+  cursor: pointer;           /* Indicador de que é interativo */
+  display: flex;              /* Usando flexbox para centralizar o texto */
+  align-items: center;        /* Alinha o conteúdo verticalmente no centro */
+  justify-content: center;    /* Alinha o conteúdo horizontalmente no centro */
+  text-align: center;         /* Alinha o texto centralizado */
+  font-size: 12px;            /* Tamanho da fonte */
+  font-weight: bold;          /* Deixa o texto em negrito */
+  padding: 0 10px;            /* Adiciona um pouco de espaçamento nas laterais */
+  box-sizing: border-box;     /* Garante que o padding não afete o tamanho do círculo */
+  transition: background-color 0.3s ease;  /* Efeito de transição na cor de fundo */
 }
 
 .circle:hover {
   background-color: #FF7F50;  /* Cor salmão mais forte no hover */
+}
+.botao{
+  width: 60px;
+  height: 10px;
+  background-color: #c7c4c2;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.botao-voltar-rota{
+  background-color: #ec5215;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 140px;
+  margin-left: 20px;
+  width: 60px;
+  bottom: 20px;
+  left: 50%;
+
 }
