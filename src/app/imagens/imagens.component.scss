@@ -17,3 +17,12 @@
 .imagem:hover {
   transform: scale(1.05); /* Efeito de zoom quando a imagem é passada por cima */
 }
+:host {
+  display: block;
+  width: 100%;  /* Ou qualquer outra largura desejada */
+  height: 100%;  /* Ou a altura que você precisar */
+
+  background-size: cover;  /* A imagem de fundo cobre toda a área do componente */
+  background-position: center;  /* Centraliza a imagem */
+  opacity: 0.7;  /* Se quiser tornar a imagem um pouco mais transparente */
+}
