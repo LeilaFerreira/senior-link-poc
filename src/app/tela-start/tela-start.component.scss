@@ -1,0 +1,129 @@
+/* Estilos para centralizar a imagem e o celular */
+:host {
+  display: block;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Estilo do contêiner do celular */
+.celular {
+  width: 300px;
+  height: 600px;
+  background-color: #000;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo da tela do celular */
+// .tela {
+//   width: 100%;
+//   height: 100%;
+//   background-image: '../assets/images/principal.jpg';
+//   background-size: cover;
+//   background-position: center;
+// }
+
+/* Estilos do botão do celular */
+.botao {
+  width: 60px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// .tela {
+//   width: 100%;
+//   height: 200px;
+//   background-image: url('https://via.placeholder.com/300x100'); /* Substitua com sua imagem */
+//   background-size: cover;
+//   background-position: center;
+//   border-radius: 20px;
+//   margin-bottom: 20px; /* Espaço entre as caixas */;
+
+// }
+.tela {
+  width: 100%;
+  height: 300px;
+  // background-image: url('../../assets/images/principal3.jpg');
+  background-size: cover;         /* A imagem cobre toda a área da div */
+  background-position: center;    /* A imagem é centralizada */
+  background-repeat: no-repeat;   /* Impede a repetição da imagem */
+  border-radius: 20px;            /* Bordas arredondadas */
+  margin-bottom: 20px;            /* Espaço entre as caixas */
+
+  /* Para adicionar transparência ao fundo */
+  position: relative;
+}
+
+.tela::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);  /* Camada de cor branca com opacidade 0.5 */
+  border-radius: 20px;  /* Mantém as bordas arredondadas */
+  pointer-events: none; /* Garante que o conteúdo dentro da div seja clicável */
+}
+
+/* Estilos das outras caixas (simulando ícones ou funcionalidades do celular) */
+.caixa {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(133, 95, 95, 0.1); /* Cor de fundo semitransparente */
+  margin-bottom: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.scroll-vertical {
+  width: 100%;           /* Largura da div */
+  height: 200px;         /* Defina uma altura fixa */
+  overflow-y: auto;      /* Barra de rolagem apenas na vertical */
+  border: 1px solid #ccc;  /* Adicionar uma borda para visualização */
+}
+.app-imagens {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;  /* Garante que o fundo do app-imagens seja transparente */
+}
+/* Contêiner para os círculos */
+.circle-container {
+  display: flex;  /* Faz os círculos ficarem lado a lado */
+  gap: 10px;      /* Espaçamento entre os círculos */
+  justify-content: center;  /* Alinha os círculos no centro horizontalmente */
+  margin-top: 20px;  /* Distância do topo */
+  flex-wrap: nowrap; /* Impede que os círculos quebrem para a linha de baixo */
+}
+
+/* Estilo para os círculos */
+.circle {
+  width: 50px;             /* Tamanho do círculo */
+  height: 50px;            /* Tamanho do círculo */
+  background-color: #FFA07A;  /* Cor salmão */
+  border-radius: 50%;      /* Faz o formato ser circular */
+  cursor: pointer;        /* Indica que é clicável */
+  display: flex;
+  align-items: center;     /* Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  transition: background-color 0.3s ease;  /* Efeito de transição para hover */
+}
+
+.circle:hover {
+  background-color: #FF7F50;  /* Cor salmão mais forte no hover */
+}

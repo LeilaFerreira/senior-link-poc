@@ -1,0 +1,19 @@
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaço entre as imagens */
+  padding: 20px;
+}
+
+.imagem {
+  width: 200px; /* Largura das imagens */
+  height: auto; /* Altura ajustada automaticamente */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+  transition: transform 0.3s ease; /* Efeito de transição */
+}
+
+.imagem:hover {
+  transform: scale(1.05); /* Efeito de zoom quando a imagem é passada por cima */
+}

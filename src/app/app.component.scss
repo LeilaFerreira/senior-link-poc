@@ -1,0 +1,78 @@
+
+
+
+/* Estilos para centralizar a imagem e o celular */
+:host {
+  display: block;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Estilo do contêiner do celular */
+.celular {
+  width: 300px;
+  height: 600px;
+  background-color: #000;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.botao {
+  width: 60px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.tela {
+  width: 100%;
+  height: 300px;
+  background-image: url('../assets/images/principal3.jpg');
+  background-size: cover;         /* A imagem cobre toda a área da div */
+  background-position: center;    /* A imagem é centralizada */
+  background-repeat: no-repeat;   /* Impede a repetição da imagem */
+  border-radius: 20px;            /* Bordas arredondadas */
+  margin-bottom: 20px;            /* Espaço entre as caixas */
+
+  /* Para adicionar transparência ao fundo */
+  position: relative;
+}
+
+.tela::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);  /* Camada de cor branca com opacidade 0.5 */
+  border-radius: 20px;  /* Mantém as bordas arredondadas */
+  pointer-events: none; /* Garante que o conteúdo dentro da div seja clicável */
+
+}
+.button-rota{
+  background-color: #ff7f50; /* Cor salmão */
+  color: white;              /* Cor do texto (branco) */
+  border: none;              /* Remove borda padrão */
+  border-radius: 25px;       /* Bordas arredondadas */
+  padding: 10px 20px;        /* Espaçamento interno */
+  font-size: 16px;           /* Tamanho da fonte */
+  font-weight: bold;         /* Texto em negrito */
+  cursor: pointer;          /* Mudança do cursor ao passar sobre o botão */
+  transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.botao-rota:hover {
+  background-color: #ff5733; /* Cor mais escura para o efeito hover */
+}
