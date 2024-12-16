@@ -1,8 +1,6 @@
 
 # senior-link-poc
 
-##  README.md 
-
 O ProjetoSeniorLink - Aplicativo para Monitoramento da Saúde de Idosos
 Este repositório contém o código-fonte do SeniorLink, um aplicativo desenvolvido para ajudar filhos e familiares a monitorar a saúde e a medicação de seus entes queridos idosos, garantindo que estejam seguros e bem cuidados mesmo à distância.
 
