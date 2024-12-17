@@ -1,4 +1,37 @@
 <div class="celular ">
+  <h2 class="titulo-alerta">Alertas e Notificações</h2>
+
+  <div class="alertas-container">
+    <!-- Filtros -->
+    <div class="filtros">
+      <label for="filtro">Filtrar Alertas:</label>
+      <select id="filtro" [(ngModel)]="filtros">
+        <option *ngFor="let tipo of tiposDeAlertas" [value]="tipo">{{ tipo | uppercase }}</option>
+      </select>
+    </div>
+
+    <!-- Lista de Alertas -->
+    <div *ngFor="let alerta of filtrarAlertas()" class="alerta" [ngClass]="getCorAlerta(alerta)">
+      <div class="alerta-conteudo">
+        <p>{{ alerta.mensagem }}</p>
+        <p><strong>{{ alerta.data }}</strong></p>
+      </div>
+
+      <div class="acoes">
+        <button *ngIf="!alerta.lido" (click)="marcarComoLido(alerta)" class="btn-lido">Marcar como Lido</button>
+        <button *ngIf="!alerta.lido" (click)="removerAlerta(alerta)" class="btn-remover">Remover</button>
+
+        <!-- Ação Imediata para Emergências -->
+        <button *ngIf="alerta.tipo === 'emergencia'" (click)="acionarAcaoImediata()" class="btn-urgente">Chamar um Médico</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
   <button class="botao-voltar-rota" (click)="goBackToHome()">Voltar </button>
   <div class="botao"></div>
 </div>

@@ -1,0 +1,22 @@
+<header class="header-container">
+  <div class="titulo-sinais-vitais">
+    <h4>Sinais Vitais</h4>
+  </div>
+  <div class="usuario-info">
+    <!-- Foto/avatar do usuário -->
+    <img [src]="usuario.fotoUrl" alt="Foto do Usuário" class="usuario-avatar" />
+
+    <!-- Nome do usuário -->
+    <div class="usuario-nome">
+      <h2>{{ usuario.nome }}</h2>
+    </div>
+  </div>
+
+  <!-- Indicador de Status de Saúde -->
+  <div class="status-saude" [ngClass]="usuario.statusSaudeClass">
+    <p>{{ usuario.statusSaude }}</p>
+  </div>
+
+
+
+</header>

@@ -49,4 +49,8 @@ export class FormularioComponent {
 
     }
   }
+  goBackToHome(): void {
+    this.router.navigate(['/home']);
+  }
+
 }
