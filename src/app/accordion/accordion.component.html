@@ -5,7 +5,7 @@
       <h3>Exames</h3>
     </div>
     <div class="accordion-content" [class.active]="isActive(0)">
-      <p>Detalhes sobre os exames realizados:</p>
+      <p class="texto-detalhes">Detalhes sobre os exames realizados:</p>
       <ul>
         <li>Exame 1 - Resultado: Normal</li>
         <li>Exame 2 - Resultado: Anormal</li>
@@ -20,7 +20,7 @@
       <h3>Consultas Antigas</h3>
     </div>
     <div class="accordion-content" [class.active]="isActive(1)">
-      <p>Consultas realizadas anteriormente:</p>
+      <p class="texto-detalhes">Consultas realizadas anteriormente:</p>
       <ul>
         <li>Consulta 1 - Data: 01/01/2023</li>
         <li>Consulta 2 - Data: 15/03/2023</li>
@@ -35,7 +35,7 @@
       <h3>Local de Atendimento</h3>
     </div>
     <div class="accordion-content" [class.active]="isActive(2)">
-      <p>Atendimento realizado em: <strong>Clínica Exemplo</strong></p>
+      <p class="texto-detalhes" style="text-align: center!important; padding: 3px!important;">Atendimento realizado em: <strong>Clínica Exemplo</strong></p>
       <p>Endereço: Rua Exemplo, 123, Bairro, Cidade</p>
     </div>
   </div>
@@ -46,7 +46,7 @@
       <h3>Download de Arquivos</h3>
     </div>
     <div class="accordion-content" [class.active]="isActive(3)">
-      <p>Baixe os seguintes arquivos:</p>
+      <p class="texto-detalhes">Baixe os seguintes arquivos:</p>
       <ul>
         <li><a href="/assets/exame1.pdf" download>Exame 1 - PDF</a></li>
         <li><a href="/assets/exame2.pdf" download>Exame 2 - PDF</a></li>

@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="sinais-vitais-card">
+
+    <div class="sinal">
+      <h4>Pressão Arterial: {{ pressao }} mmHg</h4>
+      <div class="barra" [style.width.%]="(pressao - 90) / 90 * 100" [style.background]="determinarCor(pressao, 'pressao')"></div>
+    </div>
+
+    <div class="sinal">
+      <h4>Frequência Cardíaca: {{ frequenciaCardiaca }} BPM</h4>
+      <div class="barra" [style.width.%]="(frequenciaCardiaca - 60) / 40 * 100" [style.background]="determinarCor(frequenciaCardiaca, 'frequencia')"></div>
+    </div>
+
+    <div class="sinal">
+      <h4>Temperatura Corporal: {{ temperatura }} °C</h4>
+      <div class="caixa" [style.background]="determinarCor(temperatura, 'temperatura')">
+        {{ temperatura }} °C
+      </div>
+    </div>
+
+    <div class="sinal">
+      <h4>Oximetria: {{ oximetria }}%</h4>
+      <div class="caixa" [style.background]="determinarCor(oximetria, 'oximetria')">
+        {{ oximetria }}%
+      </div>
+    </div>
+
+    <div class="atualizacao">
+      Última atualização: {{ ultimaAtualizacao }}
+    </div>
+
+    <button class="botao-ajuda" (click)="acionarAjuda()">Acionar Ajuda</button>
+
+
+  </div>
+</div>

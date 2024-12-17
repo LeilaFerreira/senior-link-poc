@@ -9,6 +9,7 @@
   position: relative;  /* Necessário para posicionar o formulário dentro do celular */
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%);
 }
 
 .formulario-container {
@@ -67,4 +68,17 @@ button:disabled {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+}
+.botao-voltar-rota{
+  background-color: #ec5215;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 60px;
+  bottom: 20px;
+  left: 5%;
+  position: absolute;
 }

@@ -2,7 +2,7 @@
 <div class="celular " [ngStyle]="{'background-image': 'url(' + imagens[0] + ')'}">
 <app-imagens></app-imagens>
 <div class="formulario-container">
-  <h2>Formulário Adicional</h2>
+  <h2>Formulário Adicional (Inclusão do Tutor)</h2>
 
   <form (ngSubmit)="onSubmit()" [formGroup]="formularioForm">
     <div class="form-group">
@@ -14,5 +14,6 @@
     <button type="submit" [disabled]="formularioForm.invalid">Enviar</button>
   </form>
 </div>
+<button class="botao-voltar-rota" (click)="goBackToHome()">Voltar </button>
 <div class="botao"></div>
 </div>

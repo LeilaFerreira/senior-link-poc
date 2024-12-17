@@ -1,0 +1,52 @@
+/* header.component.scss */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.usuario-info {
+  display: flex;
+  align-items: center;
+}
+
+.usuario-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.usuario-nome h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.status-saude {
+  padding: 3px 17px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 60px;
+}
+
+.status-estavel {
+  background-color: #28a745;  /* Cor verde para saúde estável */
+}
+
+.status-atenção {
+  background-color: #ffc107;  /* Cor amarela para saúde precisa de atenção */
+}
+
+.status-critico {
+  background-color: #dc3545;  /* Cor vermelha para saúde crítica */
+}
+.titulo-sinais-vitais{
+  position: absolute;
+  margin-top: 24%;
+}
