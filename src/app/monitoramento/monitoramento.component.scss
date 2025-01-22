@@ -1,7 +1,7 @@
 .celular {
   width: 300px;
   height: 600px;
-  background-color: #f8dfdf;;
+background-color: #fff;
   border-radius: 40px;
   position: relative;
   overflow: hidden;
@@ -18,17 +18,31 @@
   transform: translateX(-50%);
 }
 .botao-voltar-rota{
-  background-color: #ec5215;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 8px 5px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 144%;
-  margin-left: 20px;
-  width: 60px;
-  bottom: 20px;
-  left: 50%;
+  background-color: #274690;
+  // color: white;
+  // border: none;
+  // border-radius: 25px;
+  // padding: 8px 5px;
+  // font-weight: bold;
+  // cursor: pointer;
+   margin-top: 6%;
+   margin-left: 40px;
+  // width: 60px;
+  // bottom: 20px;
+  // left: 50%;
+  text-align: center;           /* Alinha o texto no centro */
+  position: absolute;           /* Posiciona o botão de forma absoluta */
+
+  transform: translate(-50%, -50%);  /* Centraliza o botão completamente na tela */
+  width: 82%;                   /* Largura do botão */
+  padding: 0px 1px;             /* Espaçamento interno do texto (não há muito espaço no botão) */
+  font-size: 18px;              /* Tamanho da fonte */
+  font-weight: bold;            /* Texto em negrito */
+  color: #274690;                /* Cor do texto em laranja */
+  background-color: transparent; /* Fundo transparente */
+  border: none;                 /* Sem borda */
+  cursor: pointer;             /* Cursor de mão para indicar que é clicável */
+  text-decoration: none;        /* Remove sublinhado se for um link */
+  outline: none;
 
 }

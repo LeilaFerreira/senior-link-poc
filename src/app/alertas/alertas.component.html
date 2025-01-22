@@ -1,5 +1,7 @@
-<div class="celular ">
-  <h2 class="titulo-alerta">Alertas e Notificações</h2>
+<div class="celular">
+  <!-- Câmera na parte superior -->
+  <div class="camera"></div>
+  <h4 class="titulo-alerta">Alertas e Notificações</h4>
 
   <div class="alertas-container">
     <!-- Filtros -->
@@ -10,28 +12,40 @@
       </select>
     </div>
 
-    <!-- Lista de Alertas -->
-    <div *ngFor="let alerta of filtrarAlertas()" class="alerta" [ngClass]="getCorAlerta(alerta)">
-      <div class="alerta-conteudo">
-        <p>{{ alerta.mensagem }}</p>
-        <p><strong>{{ alerta.data }}</strong></p>
-      </div>
+    <!-- Acordeão com os alertas -->
+    <div class="acoordion">
+      <div *ngFor="let alerta of filtrarAlertas(); let i = index" class="accordion-item">
+        <!-- Cabeçalho do Acordeão -->
+        <div class="accordion-header"
+          [ngClass]="getCorAlerta(alerta)"
+          (click)="toggleAccordion(i)">
+          <div class="alerta-conteudo">
+            <p><strong class="alerta-paragrafo">{{ alerta.data }}</strong></p>
+          </div>
+        </div>
 
-      <div class="acoes">
-        <button *ngIf="!alerta.lido" (click)="marcarComoLido(alerta)" class="btn-lido">Marcar como Lido</button>
-        <button *ngIf="!alerta.lido" (click)="removerAlerta(alerta)" class="btn-remover">Remover</button>
+        <!-- Corpo do Acordeão -->
+        <div [ngClass]="{'accordion-content': true, 'active': isActive(i)}">
+          <div *ngIf="isActive(i)" >
+            <div class="acoes">
+              <p>{{ alerta.mensagem }}</p>
+              <button *ngIf="!alerta.lido" (click)="marcarComoLido(alerta)" class="btn-lido">Marcar como Lido</button>
+              <button *ngIf="!alerta.lido" (click)="removerAlerta(alerta)" class="btn-remover">Remover</button>
 
-        <!-- Ação Imediata para Emergências -->
-        <button *ngIf="alerta.tipo === 'emergencia'" (click)="acionarAcaoImediata()" class="btn-urgente">Chamar um Médico</button>
+              <!-- Ação Imediata para Emergências -->
+              <button *ngIf="alerta.tipo === 'emergencia'" (click)="acionarAcaoImediata()" class="btn-urgente">Chamar um Médico</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+
+
+
   </div>
+   <!-- Botão de Voltar -->
+   <button class="botao-voltar-rota" (click)="goBackToHome()">Voltar</button>
 
-
-
-
-
-
-  <button class="botao-voltar-rota" (click)="goBackToHome()">Voltar </button>
-  <div class="botao"></div>
+   <footer><div class="botao"></div></footer>
 </div>

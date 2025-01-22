@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './cadastro.component.html',
   styleUrls: ['./cadastro.component.scss']
 })
-export class CadastroComponent {
+export class CadastroComponent implements OnInit{
 
   cadastroForm: FormGroup;
 
@@ -17,6 +17,36 @@ export class CadastroComponent {
       email: ['', [Validators.required, Validators.email]],
       senha: ['', [Validators.required, Validators.minLength(6)]]
     });
+  }
+
+
+  ngOnInit(): void {
+    // Caso você queira simular um formulário pré-preenchido (ou buscar dados de uma API, por exemplo)
+    // Exemplo: Se o formulário já tiver dados (simulação)
+    this.preencherFormulario();
+
+    // Verificar se o formulário já está preenchido e habilitar o botão automaticamente
+    if (this.cadastroForm.valid) {
+      this.habilitarBotao();
+    }
+  }
+
+  // Método para preencher o formulário com dados
+  preencherFormulario(): void {
+    // Simulando dados preenchidos automaticamente (substitua por lógica real se necessário)
+    this.cadastroForm.patchValue({
+      email: 'usuario@exemplo.com',
+      senha: '123456'
+    });
+  }
+
+  // Habilitar botão manualmente (se necessário)
+  habilitarBotao(): void {
+    if (this.cadastroForm.valid) {
+      // O botão será habilitado automaticamente pelo Angular quando o formulário for válido
+      // Adicionamos uma verificação extra para garantir que isso aconteça se a página for carregada com o formulário válido
+      console.log('Botão habilitado');
+    }
   }
 
   // Obter controle de email e senha para facilitar o acesso no template

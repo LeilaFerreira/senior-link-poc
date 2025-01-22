@@ -6,26 +6,17 @@
 }
 
 .accordion-item {
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  ///border-radius: 5px;
-  margin-left: 18px;
 
-      /* position: absolute; */
-      top: 68%;
-      left: 50%;
-      /* transform: translate(-50%, -50%); */
-      width: 82%;
-      padding: 7px;
-      border-radius: 35px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      z-index: 1;
-      background-color:rgba(255, 255, 255, 0.6);
+  margin: 15px 0;
+  margin-left: 27px;
+  top: 68%;
+  left: 50%;
+  width: 82%;
+  border-radius: 9px;
 
 }
 
 .accordion-header {
-  background-color: #f1f1f1;
   padding: 4px;
   cursor: pointer;
   font-weight: bold;
@@ -33,15 +24,12 @@
   border-radius: 35px
 }
 
-.accordion-header:hover {
-  background-color: #ddd;
-}
+
 
 .accordion-content {
   display: none;
   padding: 15px;
-  background-color: #fafafa;
-  border-top: 1px solid #ddd;
+
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
@@ -57,7 +45,7 @@
 
 /* Estilos para os links de download */
 .accordion-content a {
-  color: #007bff;
+  color: #274690;
   text-decoration: none;
 }
 
@@ -68,6 +56,9 @@
   text-align: center!important;
   margin: 2%!important;
   font-weight: bold!important;
-  color: #ec5215!important;
+  color: #0836a1!important;
 }
 
+.color-test-header{
+  color: #274690;
+}

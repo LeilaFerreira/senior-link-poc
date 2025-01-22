@@ -1,8 +1,10 @@
 <!-- formulario.component.html -->
 <div class="celular " [ngStyle]="{'background-image': 'url(' + imagens[0] + ')'}">
+   <!-- Câmera na parte superior -->
+   <div class="camera"></div>
 <app-imagens></app-imagens>
 <div class="formulario-container">
-  <h2>Formulário Adicional (Inclusão do Tutor)</h2>
+  <h5 class="stilo-texto">Formulário Adicional (Inclusão do Tutor)</h5>
 
   <form (ngSubmit)="onSubmit()" [formGroup]="formularioForm">
     <div class="form-group">

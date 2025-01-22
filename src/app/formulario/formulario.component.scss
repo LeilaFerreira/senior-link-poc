@@ -41,9 +41,9 @@ input {
 }
 
 button {
-  width: 100%;
+  width: 92%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #274690;
   color: white;
   border: none;
   border-radius: 5px;
@@ -70,15 +70,35 @@ button:disabled {
   transform: translateX(-50%);
 }
 .botao-voltar-rota{
-  background-color: #ec5215;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  width: 60px;
-  bottom: 20px;
-  left: 5%;
+  // margin-top: 6%;
+  margin-top: -40px;
+  margin-left: 56px;
+  text-align: center;
   position: absolute;
+  transform: translate(-50%, -50%);
+  width: 82%;
+  padding: 0px 1px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+.stilo-texto{
+  color:#274690
+}
+/* Parte superior da tela (Câmera) */
+.camera {
+  width: 65px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
 }

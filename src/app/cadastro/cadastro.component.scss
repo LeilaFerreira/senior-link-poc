@@ -1,15 +1,14 @@
 /* cadastro.component.scss */
 .cadastro-container {
   position: absolute;
-  top: 68%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 82%;
-  padding: 20px;
-  border-radius: 35px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.6);
+    top: 68%;
+    padding: 20px 33px;
+    left: 25px;
+    transform: translate(0%, -24%);
+    border-radius: 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    background-color: #FFFFFF;
 
 }
 
@@ -29,27 +28,30 @@ label {
 }
 
 input {
-  width: 93%;
   padding: 8px;
   font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 12px;
 }
 
-button {
+.botao-cadastrar {
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #CCCCCC;
   color: white;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s;
 
 }
+.botao-cadastrar:hover {
+  background-color: #274690; /* Cor ao passar o mouse */
+}
 
-button:disabled {
-  background-color: #ccc;
+.botao-cadastrar:disabled {
+  background-color: #CCCCCC;
 }
 
 .error {
@@ -61,6 +63,6 @@ button:disabled {
   margin-left: 3%;
 }
 .titulo-cadastro{
-  color:#ec5215 ;
+  color:#274690 ;
   margin-right: 30px;
 }

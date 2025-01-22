@@ -17,4 +17,14 @@ export class TelaStartComponent {
   goBackToHome(): void {
     this.router.navigate(['/home']);
   }
+
+
+  // Informações do usuário
+  usuario = {
+    nome: 'José da Silva',
+    fotoUrl: 'https://randomuser.me/api/portraits/men/69.jpg',  // URL de exemplo para a foto/avatar
+    statusSaude: 'Saúde Estável',  // Status de saúde
+    statusSaudeClass: 'status-estavel'  // Classe CSS para representar o status de saúde
+  };
+
 }

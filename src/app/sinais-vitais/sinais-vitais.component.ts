@@ -50,22 +50,22 @@ export class SinaisVitaisComponent implements OnInit {
   determinarCor(valor: number, tipo: string): string {
     if (tipo === 'pressao') {
       if (valor < 90) return 'red';  // Crítico
-      if (valor < 120) return 'yellow';  // Alerta
+      if (valor < 120) return 'orange';  // Alerta
       return 'green';  // Normal
     }
     if (tipo === 'frequencia') {
       if (valor < 60) return 'red';  // Crítico
-      if (valor < 80) return 'yellow';  // Alerta
+      if (valor < 80) return 'orange';  // Alerta
       return 'green';  // Normal
     }
     if (tipo === 'temperatura') {
       if (valor < 35) return 'red';  // Crítico
-      if (valor < 37) return 'yellow';  // Alerta
+      if (valor < 37) return 'orange';  // Alerta
       return 'green';  // Normal
     }
     if (tipo === 'oximetria') {
       if (valor < 90) return 'red';  // Crítico
-      if (valor < 95) return 'yellow';  // Alerta
+      if (valor < 95) return 'orange';  // Alerta
       return 'green';  // Normal
     }
     return 'green';  // Default
