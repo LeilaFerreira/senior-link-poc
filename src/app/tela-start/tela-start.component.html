@@ -1,22 +1,47 @@
 
-<!-- Contêiner do celular -->
-<div class="celular ">
 
-  <div class="tela" >
+
+<!-- Contêiner do celular -->
+<div class="celular">
+  <!-- Tela do celular -->
+  <div class="tela">
+    <!-- Aqui você pode adicionar o conteúdo da tela (ex: imagens, widgets) -->
     <!-- <app-imagens ></app-imagens> -->
   </div>
-  <!-- Outras caixas distribuídas abaixo -->
 
-  <div class="circle-container">
-    <div class="circle"[routerLink]="['/monitoramento']">Monitoramento</div>
-    <div class="circle"[routerLink]="['/alertas']">Alertas</div>
-    <div class="circle"[routerLink]="['/historico-de-saude']">Historico de Saúde</div>
+  <!-- Status na parte superior -->
+  <!-- <div class="status">
+    <div class="icone wifi"><i name="wifi-outline"></i></div>
+    <div class="icone rede"><i name="signal-outline"></i></div>
+    <div class="icone bateria"><i name="battery-half-outline"></i></div>
+  </div> -->
+
+  <!-- Câmera na parte superior -->
+  <div class="camera"></div>
+
+  <!-- Botões laterais -->
+  <div class="botao-lateral botao-lateral-esquerdo"></div>
+  <div class="botao-lateral botao-lateral-direito"></div>
+
+  <!-- Outras caixas distribuídas abaixo -->
+  <div class="usuario-info">
+    <!-- Foto/avatar do usuário -->
+    <img [src]="usuario.fotoUrl" alt="Foto do Usuário" class="usuario-avatar" />
   </div>
 
-  <button class="botao-voltar-rota" (click)="goBackToHome()">Voltar </button>
+  <!-- Nome do usuário -->
+  <div class="nome-usuario">{{ usuario.nome }}</div>
+
+  <!-- Caixa de círculos -->
+  <div class="circle-container">
+    <div class="circle" [routerLink]="['/monitoramento']">Monitoramento</div>
+    <div class="circle" [routerLink]="['/alertas']">Alertas</div>
+    <div class="circle" [routerLink]="['/historico-de-saude']">Histórico de Saúde</div>
+  </div>
+
+  <!-- Botão de Voltar -->
+  <button class="botao-voltar-rota" (click)="goBackToHome()">Voltar</button>
 
   <!-- Botão Home -->
-   <footer><div class="botao"></div></footer>
-
+  <footer><div class="botao"></div></footer>
 </div>
-

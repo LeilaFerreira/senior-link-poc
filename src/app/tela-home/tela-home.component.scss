@@ -42,7 +42,7 @@
   background-position: right;    /* A imagem é centralizada */
   background-repeat: no-repeat;   /* Impede a repetição da imagem */
   border-radius: 20px;            /* Bordas arredondadas */
-  margin-bottom: 20px;            /* Espaço entre as caixas */
+  margin-bottom: 40px;            /* Espaço entre as caixas */
   /* Para adicionar transparência ao fundo */
   position: relative;
 }
@@ -80,7 +80,7 @@
 .celular {
   width: 300px;
   height: 600px;
-  background-color: #FFA07A;
+  background-color: #274690;
   border-radius: 40px;
   position: relative;
   overflow: hidden;
@@ -95,22 +95,38 @@
   letter-spacing: 2px;
   padding-left: 12px;
 }
-
+.camera {
+  width: 65px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+}
 
 .botao-iniciar{
   margin-left: 3%;
   margin-top: 68%;
-  background-color: #ff5733;
+  background-color: #274690;
   color: white;              /* Cor do texto (branco) */
   border: none;              /* Remove borda padrão */
   border-radius: 25px;       /* Bordas arredondadas */
-  padding: 10px 20px;        /* Espaçamento interno */
+  padding: 10px 29px 8px;        /* Espaçamento interno */
   font-size: 16px;           /* Tamanho da fonte */
   font-weight: bold;         /* Texto em negrito */
   cursor: pointer;
   align-self: flex-end;      /* Mudança do cursor ao passar sobre o botão */
-
+  position: relative;
+  z-index: 10;
 }
 .botao-iniciar:hover {
-  background-color: #ff5733; /* Cor mais escura para o efeito hover */
+  background-color: #829fe4; /* Cor mais escura para o efeito hover */
+}
+
+.estilo-cadastro{
+  position: relative;
+  z-index: 10;
 }

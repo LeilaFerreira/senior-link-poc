@@ -1,68 +1,103 @@
+
+/* Container principal */
 .container {
-  text-align: center;
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 82%;
-    padding: 0px 20px;
-    border-radius: 35px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
 }
 
+/* Cartão que contém os sinais vitais */
+.sinais-vitais-card {
+
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombras para dar profundidade */
+  width: 100%;  /* Definindo uma largura de 80% da tela */
+}
+
+/* Estilos para cada sinal vital */
 .sinal {
-  margin: -3px 0;
+  margin-bottom: 0px;  /* Espaçamento entre os sinais vitais */
 }
 
-.barra {
-  height: 30px;
+.sinal h4 {
+  font-size: 14px;
+  margin-bottom: 10px;  /* Espaçamento entre o título e a barra */
   margin-top: 10px;
-  border-radius: 5px;
-  width: 100%;
 }
 
+/* Barra de progresso dos sinais vitais */
+.barra {
+  width: 100%;  /* Definindo o tamanho total da barra */
+  height: 10px; /* Altura da barra */
+  background-color: #e0e0e0; /* Cor de fundo cinza claro */
+  border-radius: 5px;
+  position: relative;
+}
+
+.barra::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Caixa para temperatura e oximetria */
 .caixa {
-  height: 40px;
-  width: 200px;
-  margin: -2px auto;
+  padding: 10px;
+  text-align: center;
   border-radius: 5px;
-  line-height: 40px;
-  color: white;
   font-weight: bold;
+  color: white;
+  width: 100px;  /* Largura fixa para as caixas */
+  margin-top: 10px;
 }
 
+/* Estilo para a atualização */
 .atualizacao {
   margin-top: 20px;
-  font-size: 16px;
-  color: #666;
+  font-size: 14px;
+  color: #555;
 }
 
-.button {
-  background-color: #007BFF;
+/* Estilo do botão de ajuda */
+.botao-ajuda {
+  background-color: #274690;
   color: white;
   padding: 10px 20px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
+  width: 100%;
 }
 
-.button:hover {
-  background-color: #0056b3;
+.botao-ajuda:hover {
+  background-color: #698de0;
 }
-.botao-ajuda{
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 9px 9px;
-  // font-weight: bold;
-  // cursor: pointer;
-  // margin-top: 138%;
-  // margin-left: 20px;
-  // width: 60px;
-  // bottom: 20px;
-  // left: 50%;
+
+// /* Adicionando cores para os valores das barras */
+// .barra.pressao {
+//   background-color: #e0e0e0; /* Cor de fundo padrão da barra */
+// }
+
+// .barra.frequencia {
+//   background-color: #e0e0e0; /* Cor de fundo padrão da barra */
+// }
+
+// .barra.temperatura {
+//   background-color: #e0e0e0; /* Cor de fundo padrão da barra */
+// }
+
+// .barra.oximetria {
+//   background-color: #e0e0e0; /* Cor de fundo padrão da barra */
+// }
+.icones-medicos {
+  color: #274690; /* Cor de fundo padrão da barra */
+  margin-bottom: 5px;
+  margin-top: 5px;
 }

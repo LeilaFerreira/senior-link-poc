@@ -25,6 +25,7 @@ export class AlertasComponent implements OnInit {
   filtros: string = 'todos'; // Filtro de tipos de alertas
   tiposDeAlertas: string[] = ['todos', 'medicacao', 'consulta', 'exame', 'emergencia'];
 
+  activeIndex: number = -1; // Nenhuma seção aberta inicialmente
   constructor(private router: Router) {}
 
   ngOnInit(): void { }
@@ -69,4 +70,18 @@ export class AlertasComponent implements OnInit {
   goBackToHome(): void {
     this.router.navigate(['/tela-start']);
   }
+
+    // Função para alternar a visibilidade das seções
+    toggleAccordion(index: number): void {
+      console.log('Index clicado:', index);
+      if (this.activeIndex === index) {
+        this.activeIndex = -1; // Fecha a seção se estiver aberta
+      } else {
+        this.activeIndex = index; // Abre a seção clicada
+      }
+    }
+
+    isActive(index: number): boolean {
+      return this.activeIndex === index;
+    }
 }
