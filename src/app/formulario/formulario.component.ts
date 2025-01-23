@@ -4,9 +4,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-formulario',
-  templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.scss']
+    selector: 'app-formulario',
+    templateUrl: './formulario.component.html',
+    styleUrls: ['./formulario.component.scss'],
+    standalone: false
 })
 export class FormularioComponent {
   formularioForm: FormGroup;

@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-monitoramento',
-  templateUrl: './monitoramento.component.html',
-  styleUrls: ['./monitoramento.component.scss']
+    selector: 'app-monitoramento',
+    templateUrl: './monitoramento.component.html',
+    styleUrls: ['./monitoramento.component.scss'],
+    standalone: false
 })
 export class MonitoramentoComponent {
 constructor(private router: Router) {}

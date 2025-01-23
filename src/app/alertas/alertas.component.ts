@@ -10,9 +10,10 @@ interface Alerta {
 }
 
 @Component({
-  selector: 'app-alertas',
-  templateUrl: './alertas.component.html',
-  styleUrls: ['./alertas.component.scss']
+    selector: 'app-alertas',
+    templateUrl: './alertas.component.html',
+    styleUrls: ['./alertas.component.scss'],
+    standalone: false
 })
 export class AlertasComponent implements OnInit {
   alertas: Alerta[] = [

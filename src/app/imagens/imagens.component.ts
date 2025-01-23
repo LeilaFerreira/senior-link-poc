@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-imagens',
-  templateUrl: './imagens.component.html',
-  styleUrls: ['./imagens.component.scss']
+    selector: 'app-imagens',
+    templateUrl: './imagens.component.html',
+    styleUrls: ['./imagens.component.scss'],
+    standalone: false
 })
 export class ImagensComponent  {
 

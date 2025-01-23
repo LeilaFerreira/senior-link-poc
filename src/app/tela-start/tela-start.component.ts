@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-tela-start',
-  templateUrl: './tela-start.component.html',
-  styleUrls: ['./tela-start.component.scss']
+    selector: 'app-tela-start',
+    templateUrl: './tela-start.component.html',
+    styleUrls: ['./tela-start.component.scss'],
+    standalone: false
 })
 export class TelaStartComponent {
 
