@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-sinais-vitais',
-  templateUrl: './sinais-vitais.component.html',
-  styleUrls: ['./sinais-vitais.component.scss']
+    selector: 'app-sinais-vitais',
+    templateUrl: './sinais-vitais.component.html',
+    styleUrls: ['./sinais-vitais.component.scss'],
+    standalone: false
 })
 export class SinaisVitaisComponent implements OnInit {
   pressao: number = 120;
