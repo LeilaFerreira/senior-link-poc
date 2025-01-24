@@ -2,6 +2,7 @@
   "name": "senior-link-poc",
   "version": "0.0.0",
   "scripts": {
+    "preinstall": "echo '//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}' > ~/.npmrc",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
