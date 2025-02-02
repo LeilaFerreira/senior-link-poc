@@ -15,12 +15,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": {
-              "base": "dist/senior-link-poc"
-            },
+            "outputPath": "dist/senior-link-poc",
             "index": "src/index.html",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -34,8 +33,7 @@
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [],
-            "browser": "src/main.ts"
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -64,12 +62,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "senior-link-poc:build"
+          },
           "configurations": {
             "production": {
-              "buildTarget": "senior-link-poc:build:production"
+              "browserTarget": "senior-link-poc:build:production"
             },
             "development": {
-              "buildTarget": "senior-link-poc:build:development"
+              "browserTarget": "senior-link-poc:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "senior-link-poc:build"
+            "browserTarget": "senior-link-poc:build"
           }
         },
         "test": {
