@@ -2,6 +2,6 @@ services:
   - type: web
     name: senior-link-poc
     env: node
-    buildCommand: "npm install"
-    startCommand: "npm start"
-    publishDirectory: "dist/senior-link-poc"
+    buildCommand: npm install
+    startCommand: npm start
+    publishDirectory: dist/senior-link-poc
