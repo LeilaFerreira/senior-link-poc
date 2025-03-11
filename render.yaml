@@ -4,4 +4,4 @@ services:
     env: node
     buildCommand: "npm install"
     startCommand: "npm start"
-    publishDirectory: "build"
+    publishDirectory: "dist/senior-link-poc"
