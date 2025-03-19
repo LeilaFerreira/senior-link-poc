@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "senior-link-poc:build"
+            "buildTarget": "senior-link-poc:build"
           }
         },
         "test": {
