@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/senior-link-poc",
             "index": "src/index.html",
@@ -63,14 +63,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "senior-link-poc:build"
+            "buildTarget": "senior-link-poc:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "senior-link-poc:build:production"
+              "buildTarget": "senior-link-poc:build:production"
             },
             "development": {
-              "browserTarget": "senior-link-poc:build:development"
+              "buildTarget": "senior-link-poc:build:development"
             }
           },
           "defaultConfiguration": "development"
