@@ -20,8 +20,8 @@ export class ChatbotComponent {
   botResponses: any = {
     'Olá': 'Olá! Como posso te ajudar?',
     'Qual o seu nome?': 'Sou um chatbot do Senior Link',
-    'Há consultas nessa semana': 'Sim, para o mês de abril de 2025, temos as seguintes consultas agendadas: 1ª semana (dia 7 abril): Consulta com o cardiologista no dia 3 de abril, às 14h. 2ª semana (8 a 30 de abril): Nenhuma consulta agendada. ',
-    'O idoso teve alguma emergência durante o dia': 'Hoje, dia 31 de março de 2025, o idoso não teve nenhuma emergência registrada até o momento. Caso surja alguma alteração, entraremos em contato imediatamente.',
+    'Há consultas nessa semana?': 'Sim, para o mês de abril de 2025, temos as seguintes consultas agendadas: 1ª semana (dia 7 abril): Consulta com o cardiologista no dia 3 de abril, às 14h. 2ª semana (8 a 30 de abril): Nenhuma consulta agendada. ',
+    'O idoso teve alguma emergência durante o dia?': 'Hoje, dia 31 de março de 2025, o idoso não teve nenhuma emergência registrada até o momento. Caso surja alguma alteração, entraremos em contato imediatamente.',
     'O idoso teve febre hoje?': 'o idoso não apresentou febre. Ele se encontra bem, sem sintomas de gripe ou outras doenças no momento.',
     'Pode me informar quais são os remédios que preciso tomar às 14h?': 'Sim, você precisa tomar os seguintes remédios às 14h: Losartana 50mg para controle da pressão arterial. Metformina 500mg para controle de diabetes. Dipirona 500mg para dor (se necessário)."',
     'Quais são os hospitais próximos da minha casa?': 'Hospital São João - Rua das Flores, 123 - a 5 minutos de carro. Hospital Central - Av. dos Amigos, 456 - a 10 minutos de carro. Hospital de Urgências - Rua da Saúde, 789 - a 7 minutos de carro."',
