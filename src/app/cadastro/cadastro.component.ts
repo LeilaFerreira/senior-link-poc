@@ -68,4 +68,7 @@ export class CadastroComponent implements OnInit{
       this.router.navigate(['/formulario']); // Substitua 'formulario' pela rota do formulário
     }
   }
+  navigateToPerguntas(): void {
+    this.router.navigate(['/perguntas']);
+  }
 }

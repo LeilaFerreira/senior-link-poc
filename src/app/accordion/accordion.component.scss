@@ -21,7 +21,7 @@
   cursor: pointer;
   font-weight: bold;
   text-align: center;
-  border-radius: 35px
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -29,10 +29,11 @@
 .accordion-content {
   display: none;
   padding: 15px;
-
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -40,7 +41,7 @@
   display: block;
   max-height: 8%;
   padding: 0px;
-  border-radius: 35px;
+
 }
 
 /* Estilos para os links de download */

@@ -15,6 +15,8 @@ import { AlertasComponent } from './alertas/alertas.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { HeaderComponent } from './header/header.component';
 import { SinaisVitaisComponent } from './sinais-vitais/sinais-vitais.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
+import { PaginaPerguntasComponent } from './pagina-perguntas/pagina-perguntas.component';
 
 
 
@@ -32,14 +34,19 @@ import { SinaisVitaisComponent } from './sinais-vitais/sinais-vitais.component';
     AccordionComponent,
     HeaderComponent,
     SinaisVitaisComponent,
+
+
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ChatbotComponent,
+    PaginaPerguntasComponent
 
   ],
+  exports: [ChatbotComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

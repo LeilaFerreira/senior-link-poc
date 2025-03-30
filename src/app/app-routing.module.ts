@@ -6,6 +6,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { MonitoramentoComponent } from './monitoramento/monitoramento.component';
 import { AlertasComponent } from './alertas/alertas.component';
 import { HistoricoDeSaudeComponent } from './historico-de-saude/historico-de-saude.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'monitoramento', component: MonitoramentoComponent }, // Rota para o monitoramento
   { path: 'alertas', component: AlertasComponent }, // Rota para os alertas
   { path: 'historico-de-saude', component: HistoricoDeSaudeComponent }, // Rota para o histórico
+  { path: 'perguntas', component: ChatbotComponent } , // Rota para chatbot
 ];
 
 @NgModule({

@@ -14,4 +14,5 @@ constructor(private router: Router) {}
     goBackToHome(): void {
       this.router.navigate(['/tela-start']);
     }
+
 }

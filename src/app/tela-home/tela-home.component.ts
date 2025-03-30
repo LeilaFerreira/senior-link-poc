@@ -18,4 +18,5 @@ export class TelaHomeComponent {
   navigateToTelaStart(): void {
     this.router.navigate(['/tela-start']);
   }
+
 }
