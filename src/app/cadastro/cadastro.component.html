@@ -1,4 +1,5 @@
 <!-- cadastro.component.html -->
+
 <div class="celular-cadastro ">
 <div class="cadastro-container">
   <h2 class="titulo-cadastro">Cadastro</h2>
@@ -17,6 +18,10 @@
     </div>
 
     <button type="submit" class="botao-cadastrar" [disabled]="cadastroForm.invalid">Cadastrar</button>
+    <div class="chatbot-bolinha" (click)="navigateToPerguntas()">
+      <img src="assets\images\chatbot.png"   class="avatar-chatbot">
+      <span class="tooltip">Fale com a Senior Link</span>
+    </div>
   </form>
 </div>
 </div>

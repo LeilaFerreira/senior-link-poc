@@ -1,0 +1,53 @@
+<!-- <div class="chatbot-container">
+  <div class="chatbox">
+    <div *ngFor="let message of messages" class="message">
+      <div *ngIf="message.from === 'bot'" class="bot-message">
+        <p>{{ message.text }}</p>
+      </div>
+      <div *ngIf="message.from === 'user'" class="user-message">
+        <p>{{ message.text }}</p>
+      </div>
+    </div>
+    <input
+      [(ngModel)]="userInput"
+      (keydown.enter)="sendMessage()"
+      placeholder="Digite sua mensagem..."
+      class="input-box"
+    />
+  </div>
+</div> -->
+<div class="celular">
+
+
+ <!-- Câmera na parte superior -->
+ <div class="camera"></div>
+
+ <div class="chatbot-container">
+  <div class="chatbox">
+    <div *ngFor="let message of messages" class="message">
+      <div *ngIf="message.from === 'bot'" class="bot-message">
+        <p>{{ message.text }}</p>
+      </div>
+      <div *ngIf="message.from === 'user'" class="user-message">
+        <p>{{ message.text }}</p>
+      </div>
+    </div>
+    <input
+      [(ngModel)]="userInput"
+      (keydown.enter)="sendMessage()"
+      placeholder="Digite sua mensagem..."
+      class="input-box"
+    />
+  </div>
+</div>
+
+
+
+
+  <!-- Botão Home -->
+  <button class="botao-voltar-rota" (click)="goBackToHome()">Voltar</button>
+
+  <footer><div class="botao"></div></footer>
+
+
+</div>

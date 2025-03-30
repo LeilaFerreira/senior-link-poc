@@ -35,8 +35,7 @@ input {
 }
 
 .botao-cadastrar {
-  width: 100%;
-  padding: 10px;
+  width: 93%;
   background-color: #CCCCCC;
   color: white;
   border: none;
@@ -65,4 +64,61 @@ input {
 .titulo-cadastro{
   color:#274690 ;
   margin-right: 30px;
+}
+.celular {
+  position: relative;
+}
+
+.chatbot-bolinha {
+  position: fixed;
+  bottom: 20px;
+  right: 3px;
+  background-color: #25d366; /* Cor verde típica do WhatsApp */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.chatbot-bolinha:hover {
+  transform: scale(1.1);
+}
+
+.avatar-chatbot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.botao-iniciar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tooltip {
+  visibility: hidden;  /* Inicialmente invisível */
+  position: absolute;
+  bottom: 100%;  /* Coloca o tooltip acima da bolinha */
+  left: 10%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);  /* Fundo do tooltip */
+  color: #fff;  /* Cor do texto */
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;  /* Evita quebra de linha */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.chatbot-bolinha:hover .tooltip {
+  visibility: visible;
+  opacity: 1;  /* Torna o tooltip visível */
 }
